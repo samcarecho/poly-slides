@@ -1,6 +1,3 @@
-google-slides
-===============
+Built on --> google-slides
 
-> ServiceWorker powered offline slides with Polymer
-
-See the [component page](http:/addyosmani.github.io/google-slides) for more information.
+https://github.com/addyosmani/google-slides

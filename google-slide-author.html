@@ -1,4 +1,4 @@
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="components/polymer/polymer.html">
 
 <!--
 A social card with information for your talk.
@@ -16,14 +16,14 @@ A social card with information for your talk.
 @status alpha
 
 -->
-<polymer-element name="google-slide-author" attributes="plus twitter avatar" noscript>
+<polymer-element name="google-slide-author" attributes="plus community avatar" noscript>
 	<template>
 	<style>
 		:host {
 		    display: block;
 		}
 
-		:host .twitter {
+		:host .community {
 			font-size: 0.8em;
 		}	
 
@@ -47,7 +47,7 @@ A social card with information for your talk.
 		
 		<div flex>	    
 		<p class="plus">{{plus}}</p>
-	    <p class="twitter">{{twitter}}</p>
+	    <p class="community">{{community}}</p>
 	    </div>
 	</div>
 

@@ -1,15 +1,102 @@
+<!--
+    @license
+    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+    Code distributed by Google as part of the polymer project is also
+    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
 <!doctype html>
-<!-- Copyright (c) 2014 Google Inc. All rights reserved. -->
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>google-slides Demo</title>
 
-  <script src="../platform/platform.js"></script>
-  <link rel="import" href="../core-component-page/core-component-page.html">
+  <script src="components/platform/platform.js"></script>
+  <link rel="import" href="google-slides.html">
+  <link rel="import" href="components/font-roboto/roboto.html">
+  <link rel="stylesheet" href="demo.css">
 
 </head>
 <body unresolved>
 
-  <core-component-page></core-component-page>
-
+  <google-slides>
+    <div is="google-slide" class="googlegreen" layout vertical center center-justified>
+      <h1>Polymer, Welcome to the Future</h1>
+      <p>&nbsp;</p>
+      <p>
+        <google-slide-author
+            avatar="resources/images/sam.jpg"
+            community="+GosampaOrg (Open Sampa)"
+            plus="+SamCarecho">
+        </google-slide-author>
+      </p>
+    </div>
+    <google-slide class="googlered" layout vertical center center-justified>
+      <h1>Dev is for Heroes</h1>
+      <p>&nbsp;</p>
+      <p>if (<a href="http://en.wikipedia.org/wiki/Languages_used_on_the_Internet" target="_blank"><strong>english</strong></a> && <a href="https://www.coursera.org/" target="_blank"><strong>lifeLongLearning</strong></a> && <a href="http://stackoverflow.com/" target="_blank" title="SOF, GitHub, Tech Events, etc"><strong>networking</strong></a>) { </p>
+      <p style="padding-left:30px">console.log("Life will be awesome!");</p>
+      <p>} else {</p>
+      <p style="padding-left:30px">console.log("You are fucked dude, you will become a slave!");</p>
+      <p>}</p>
+      <p>&nbsp;</p>
+      <p><span style="font-size: 35px">Open Mind</span></p>
+    </google-slide>
+    <google-slide class="googleblue" layout vertical center center-justified>
+      <h1>Web Components</h1>
+      <p>Encapsulated, Reusable and Composable</p>
+      <p>4 specifications:</p>
+      <p style="margin-left: 30px">Custom Elements    <span style="margin-left: 1.5em">Cr O</span></p>
+      <p style="margin-left: 30px">HTML Templates     <span style="margin-left: 1.6em">Cr O S FF</span></p>
+      <p style="margin-left: 30px">Shadow DOM         <span style="margin-left: 3.2em">Cr O</span></p>
+      <p style="margin-left: 30px">HTML Imports       <span style="margin-left: 2.8em">Cr O</span></p>
+      <p>Polyfills</p>
+      <p>Major Libraries:</p>
+      <p style="margin-left: 30px">Google's Polymer</p>
+      <p style="margin-left: 30px">Mozilla's X-Tags </p>
+      <p style="margin-left: 30px">Bosonic</p>
+    </google-slide>
+    <google-slide class="googleblue" layout vertical center center-justified>
+      <h1>The Browsers War - World</h1>
+      <p><img src="resources/images/world.png" /></p>
+    </google-slide>
+    <google-slide class="googleblue" layout vertical center center-justified>
+      <h1>The Browsers War - Brazil</h1>
+      <p><img src="resources/images/brazil.png" /></p>
+    </google-slide>
+    <google-slide class="googlegreen" layout vertical center center-justified>
+      <h1>Polymer 1.0</h1>
+      <p title="Wha you build on Polymer can be used anywhere!">A Library, not a Framework (Works w/ Everything Else)</p>
+      <p>Chrome 3x, Mobile Safari 4x</p>
+      <p>35% Less Code and Modular - 19kb to 42kb(w/ all polyfills)</p>
+      <p><a href="https://elements.polymer-project.org/" target="_blank">Polymer Catalog</a></p>
+      <p style="padding-left: 30px;" title="Polymer core elements">Iron Elements (Fe)</p>
+      <p style="padding-left: 30px;" title="Material design elements">Paper Elements (Md)</p>
+      <p style="padding-left: 30px;" title="Components for Google's APIs and services">Google Web Components (Go)</p>
+      <p style="padding-left: 30px;" title="Ecommerce Elements">Gold Elements (Au)</p>
+      <p style="padding-left: 30px;" title="Animation and Special Effects">Neon Elements (Ne)</p>
+      <p style="padding-left: 30px;" title="Offline, push, and more">Platinum Elements (Pt)</p>
+      <p style="padding-left: 30px;" title="Wrappers for third-party libraries">Molecules (Mo)</p>
+      <p><a href="https://polymer-designer.appspot.com/" target="_blank">Polymer Designer</a></p>
+    </google-slide>
+    <google-slide class="googlegreen" layout vertical center center-justified>
+      <h1>Built with Polymer</h1>
+      <p><a href="https://atavist.com/cms/project/" target="_blank" >Atavist</a></p>
+      <p><a href="https://translate.google.com/community" target="_blank" title="Built by 2 engineers in 2 months using polymer">Google Translate Community</a></p>
+      <p><a href="https://play.google.com/music/listen#/now" target="_blank" >Google Play Music</a></p>
+      <p><a href="https://events.google.com/io2015/about" target="_blank" >IOWA</a></p>
+    </google-slide>
+    <google-slide layout vertical center center-justified>
+      <h1>Starting and Running the Engine</h1>
+      <p><a target="_blank" href="https://www.polymer-project.org/1.0/docs/start/quick-tour.html">Quick Tour</a></p>
+      <p><a target="_blank" href="https://github.com/PolymerElements">Polymer Elements</a></p>
+      <p><a target="_blank" href="https://github.com/PolymerElements/polymer-starter-kit">Polymer Starter Kit</a></p>
+    </google-slide>
+    <google-slide layout vertical center center-justified>
+      <h1>Links</h1>
+      <p><a target="_blank" href="https://plus.google.com/+GosampaOrg">plus.google.com/+GosampaOrg</a></p>
+    </google-slide>
 </body>
 </html>
